@@ -2,9 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import { ThemeProvider } from "./components/theme-provider";
 import Navbar from "./components/Navbar";
-import Dashboard from "./pages/Dashboard";
-import AddJob from "./pages/AddJob";
-import EditJob from "./pages/EditJob";
+import Dashboard from "./Pages/Dashboard";
+import AddJob from "./Pages/AddJob";
+import EditJob from "./Pages/EditJob";
 
 function App() {
   return (
