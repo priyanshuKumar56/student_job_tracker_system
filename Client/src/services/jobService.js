@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API_URL = import.meta.REACT_APP_API_URL || "http://localhost:5000/api";
+const API_URL =
+  import.meta.REACT_APP_API_URL ||
+  "https://student-job-tracker-systemhell.onrender.com/api";
 
 // Create axios instance
 const api = axios.create({
@@ -37,7 +39,7 @@ export const createJob = async (jobData) => {
   console.log(jobData);
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/jobs",
+      "https://student-job-tracker-systemhell.onrender.com/api/jobs",
       jobData
     );
     return response.data;
